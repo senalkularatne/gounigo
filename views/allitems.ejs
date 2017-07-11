@@ -1,0 +1,38 @@
+<% include partials/header %>
+
+<div class="container">
+
+	<header class="jumbotron">
+		<div>
+			<h1>Welcome to GoUniGo</h1>
+			<p>View all the items for Sale!</p>
+			<p>
+				<a class = "btn btn-primary btn-lg" href="/allitems/new">Add new Item</a>	
+			</p>
+		</div>
+	</header>
+
+	<div class="col-lg-12">
+		<h3>Our most popular items</h3>
+	</div>
+
+	<div class="row text-center" style="display:flex; flex-wrap: wrap; width: 100%;">
+		<% itemsForSale.forEach(function(item) {  %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="<%= item["image"] %>" >
+					<div class="caption">
+						<h4> <%= item["name"] %> </h4>
+					</div>
+				</div> 
+			</div>
+		<% });  %>
+
+	</div> <!-- End row -->
+
+</div>  <!-- End container -->
+
+<% include partials/footer %>
+
+ 
+
