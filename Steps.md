@@ -20,3 +20,14 @@
 # Style the Navbar and Forms
 * Add a navbar to all templates
 * Style the new campground form
+
+#Add Mongoose
+* Install and configure mongoose
+* Setup campground model
+* Use campground model inside our droutes
+
+# Show Page
+* Review the RESTful routes we've seen so far
+* Add description to our sale items model
+* Show db.collection.drop()
+* Add a show route/template
